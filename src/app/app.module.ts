@@ -8,6 +8,8 @@ import { TablaComponent } from './componentes/tabla/tabla.component';
 import { NavComponent } from './componentes/nav/nav.component';
 import { ImagenesComponent } from './componentes/imagenes/imagenes.component';
 
+import { HttpClientModule } from '@angular/common/http'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,8 @@ import { ImagenesComponent } from './componentes/imagenes/imagenes.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
