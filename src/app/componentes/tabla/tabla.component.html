@@ -1,2 +1,6 @@
 <app-nav></app-nav>
-<p>tabla works!</p>
+
+<ul>
+    <li *ngFor="let producto of productos; index as i">
+        {{i+1}} - {{producto.descripcion}}</li>
+</ul>
